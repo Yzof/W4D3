@@ -1,0 +1,12 @@
+<h1>Meet our Users!</h1>
+<br>
+<%= link_to 'Create New User', new_user_url %>
+<br>
+
+<% @users.each do |user| %>
+  <%= user.user_name %>
+  <br>
+<% end %>
+
+
+<%= link_to 'Cats Home', cats_url %>
